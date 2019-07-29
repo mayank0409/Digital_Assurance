@@ -1,0 +1,10 @@
+@import "../../App.scss";
+
+.header-container {
+  display: flex;
+  align-items: center;
+  background: $theme-color;
+  height: 5rem;
+  color: aliceblue;
+  font-size: 3rem;
+}
