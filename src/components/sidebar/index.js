@@ -1,8 +1,10 @@
 import React from "react";
 import Sidebar from "react-sidebar";
+import Accordian from "../accordian";
 import MenuIcon from "../../assets/menu.svg";
 import "./sidebar.scss";
 import "../../App.scss";
+import ContentArea from "../contentarea";
 
 class SideMenu extends React.Component {
   constructor(props) {
@@ -20,23 +22,28 @@ class SideMenu extends React.Component {
   render() {
     return (
       <Sidebar
-        sidebar={<b>Hello World</b>}
+        sidebar={Accordian()}
         open={this.state.sidebarOpen}
         onSetOpen={this.onSetSidebarOpen}
         styles={{
-          sidebar: { background: "#20639b", top: "5rem", color: "white" }
+          sidebar: {
+            background: "#9b2020ab",
+            top: "5rem",
+            color: "white",
+            width: "15rem"
+          },
+          overlay: {
+            backgroundColor: "none"
+          }
         }}
       >
         <div
-          class="sidebar-container"
+          className="sidebar-container"
           onClick={() => this.onSetSidebarOpen(true)}
         >
           <img src={MenuIcon} alt="menu_icon" />
         </div>
-
-        {/* <button onClick={() => this.onSetSidebarOpen(true)}>
-          Open sidebar
-        </button> */}
+        <ContentArea sidebarOpen={this.state.sidebarOpen} />
       </Sidebar>
     );
   }

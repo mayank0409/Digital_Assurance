@@ -1,1 +1,45 @@
-$theme-color: #20639b;
+$theme-color: #9b2020ab;
+$white-color: #ffffff;
+$inputRed-color: #ddb6b6ab;
+$green-color: #5cb85c;
+$green-yellow: #f0ad4e;
+
+input[type="text"] {
+  width: 15rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: 1px solid;
+  margin: 1rem 2rem;
+  background: $inputRed-color;
+  font-size: 1rem;
+  outline: none;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+@mixin button {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 5px;
+  color: $white-color;
+  margin: 0 1rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+@mixin button-blue {
+  background: $theme-color;
+  @include button();
+}
+
+@mixin button-green {
+  background: $green-color;
+  @include button();
+}
+
+@mixin button-yellow {
+  background: $green-yellow;
+  @include button();
+}

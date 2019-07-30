@@ -1,0 +1,17 @@
+@import "../../../App.scss";
+
+.button-blue-div {
+  display: flex;
+  justify-content: flex-end;
+  .button-blue {
+    @include button-blue;
+  }
+}
+
+.button-green {
+  @include button-green;
+}
+
+.button-yellow {
+  @include button-yellow;
+}

@@ -7,7 +7,7 @@ import SideMenu from "./components/sidebar";
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style={{ backgroundColor: "#ffffff" }}>
         <Header />
         <SideMenu />
       </div>
