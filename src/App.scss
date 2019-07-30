@@ -1,18 +1,17 @@
 $theme-color: #9b2020ab;
 $white-color: #ffffff;
-$inputRed-color: #ddb6b6ab;
 $green-color: #5cb85c;
 $green-yellow: #f0ad4e;
 
 input[type="text"] {
-  width: 15rem;
+  width: 25rem;
   height: 2rem;
   border-radius: 1rem;
   border: 1px solid;
   margin: 1rem 2rem;
-  background: $inputRed-color;
   font-size: 1rem;
   outline: none;
+  padding: 0.3rem;
 }
 
 hr {
